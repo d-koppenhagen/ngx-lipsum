@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-lipsum": {
+    "ngx-lipsum-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,19 +20,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-lipsum",
+            "outputPath": "dist/ngx-lipsum-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -72,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-lipsum:build:production"
+              "browserTarget": "ngx-lipsum-demo:build:production"
             },
             "development": {
-              "browserTarget": "ngx-lipsum:build:development"
+              "browserTarget": "ngx-lipsum-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-lipsum:build"
+            "browserTarget": "ngx-lipsum-demo:build"
           }
         },
         "test": {
@@ -94,18 +89,44 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
+          }
+        }
+      }
+    },
+    "ngx-lipsum": {
+      "projectType": "library",
+      "root": "projects/ngx-lipsum",
+      "sourceRoot": "projects/ngx-lipsum/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-lipsum/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-lipsum/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-lipsum/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-lipsum/src/test.ts",
+            "tsConfig": "projects/ngx-lipsum/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-lipsum/karma.conf.js"
           }
         }
       }
     }
   },
-  "defaultProject": "ngx-lipsum"
+  "defaultProject": "ngx-lipsum-demo"
 }
