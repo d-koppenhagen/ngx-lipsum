@@ -7,7 +7,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "prepare": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -27,10 +28,14 @@
     "@angular-devkit/build-angular": "~12.2.5",
     "@angular/cli": "~12.2.5",
     "@angular/compiler-cli": "~12.2.0",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "@schuchard/prettier": "^5.1.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
-    "husky": "7.0.2",
+    "commitizen": "^4.2.4",
+    "commitlint": "^13.1.0",
+    "husky": "^7.0.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
@@ -39,6 +44,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "lint-staged": "11.1.2",
     "prettier": "2.4.0",
+    "standard-version": "^9.3.1",
     "tslint-config-prettier": "1.18.0",
     "typescript": "~4.3.5"
   },
@@ -51,5 +57,10 @@
     "*.{js,json,css,scss,less,md,ts,html,component.html}": [
       "prettier --write"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
