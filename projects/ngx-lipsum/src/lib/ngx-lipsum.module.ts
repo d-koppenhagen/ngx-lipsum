@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { NgxLipsumComponent } from './ngx-lipsum.component';
+import { LipsumDirective } from './lipsum.directive';
 
 @NgModule({
-  declarations: [NgxLipsumComponent],
+  declarations: [NgxLipsumComponent, LipsumDirective],
   imports: [],
-  exports: [NgxLipsumComponent],
+  exports: [NgxLipsumComponent, LipsumDirective],
 })
 export class NgxLipsumModule {}

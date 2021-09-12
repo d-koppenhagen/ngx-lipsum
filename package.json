@@ -23,6 +23,8 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "lorem-ipsum": "^2.0.3",
+    "ngx-lipsum": "^0.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -31,6 +33,7 @@
     "@angular-devkit/build-angular": "~12.2.5",
     "@angular/cli": "~12.2.5",
     "@angular/compiler-cli": "~12.2.0",
+    "@angular/language-service": "~12.2.0",
     "@angular/elements": "^12.2.5",
     "@babel/core": "^7.15.5",
     "@commitlint/cli": "^13.1.0",
