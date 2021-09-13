@@ -1,5 +1,7 @@
 # ngx-lipsum
 
+Easily use lorem-ipsum dummy texts in your angular app as directive, component or by using a service.
+
 ## Usage & Defaults
 
 All generated texts are based on the [`lorem-ipsum` NPM package](https://www.npmjs.com/package/lorem-ipsum#using-the-function) and it's configuration defined by the `ILoremIpsumParams` interface.
