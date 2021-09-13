@@ -1,6 +1,20 @@
 # ngx-lipsum
 
+<a href="https://www.buymeacoffee.com/dkoppenhagen" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+
+[![npm](https://img.shields.io/npm/v/ngx-lipsum.svg)](https://www.npmjs.com/package/ngx-lipsum)
+[![npm](https://img.shields.io/npm/l/ngx-lipsum.svg)](https://www.npmjs.com/package/ngx-lipsum)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
+
+[![npm](https://img.shields.io/npm/dw/ngx-lipsum.svg)](https://www.npmjs.com/package/ngx-lipsum)
+[![npm](https://img.shields.io/npm/dm/ngx-lipsum.svg)](https://www.npmjs.com/package/ngx-lipsum)
+[![npm](https://img.shields.io/npm/dy/ngx-lipsum.svg)](https://www.npmjs.com/package/ngx-lipsum)
+[![npm](https://img.shields.io/npm/dt/ngx-lipsum.svg)](https://www.npmjs.com/package/ngx-lipsum)
+
 Easily use lorem-ipsum dummy texts in your angular app as directive, component or by using a service.
+
+![ngx-lipsum Logo](https://github.com/d-koppenhagen/ngx-lipsum/raw/main/assets/lipsum-logo.svg)
 
 ## Usage & Defaults
 
