@@ -1,5 +1,5 @@
 import { Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
-import { LipsumService } from 'projects/ngx-lipsum/src/public-api';
+import { LipsumService } from './lipsum.service';
 import { ILoremIpsumParams } from 'lorem-ipsum';
 
 const SHORT_EL_DEFAULTS: ILoremIpsumParams = {
