@@ -1,27 +1,82 @@
-# NgxLipsum
+# ngx-lipsum
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+## Usage & Defaults
 
-## Development server
+All generated texts are based on the [`lorem-ipsum` NPM package](https://www.npmjs.com/package/lorem-ipsum#using-the-function) and it's configuration defined by the `ILoremIpsumParams` interface.
+In most cases this package uses the defaults by passing no further option / an empty object.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Get started: Import the module
 
-## Code scaffolding
+Before you can use **ngx-lipsum**, you have to import the `NgxLipsumModule` in your app:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```ts
+/* ... */
+import { NgxLipsumModule } from 'ngx-lipsum';
 
-## Build
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, NgxLipsumModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Now you can use either the `LipsumService`, `ngx-lipsum`-Component or `lipsum`-Directive.
 
-## Running unit tests
+### Directive Usage
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Using the `lipsum`-Directive allows you to fill most HTML Elements with _lorem ipsum_ content (some won't make sense like `video`, `audio`, `iframe`, etc.).
+By default the generated text will simply be inserted.
+The defaults here depending on the target HTML-Element. You can find them [at the top of the implementation ](https://github.com/d-koppenhagen/ngx-lipsum/tree/main/projects/ngx-lipsum/src/lib/lipsum.directive.ts)
 
-## Running end-to-end tests
+```html
+<!-- input elements (text is bound to `value`) -->
+<textarea [lipsum]></textarea>
+<input [lipsum]="{ count: 10, unit: 'words' }" />
+<!-- with custom config -->
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<!-- list elements (`li`-child will automatically be created for each paragraph) -->
+<ul [lipsum]></ul>
+<ol [lipsum]="{ count: 20, unit: 'paragraphs' }"></ol>
+<!-- with custom config -->
 
-## Further help
+<!-- common elements (text is bound to `innerText`) -->
+<li [lipsum]></li>
+<p [lipsum]="{ count: 40, unit: 'sentences' }"></p>
+<!-- with custom config -->
+<a [lipsum]></a>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Component Usage
+
+You can use the `ngx-lipsum`-Component in your template and pass through an optional configuration object as `config` input property binding.
+
+```html
+<!-- using defaults -->
+<ngx-lipsum></ngx-lipsum>
+
+<!-- using custom config -->
+<ngx-lipsum [config]="{ count: 5, unit: 'paragraphs' }"></ngx-lipsum>
+```
+
+### Service usage
+
+When you want to use the service to generate a _lorem ipsum_ text in your classes, you need to inject the service and call the `get`-method to retrieve the text.
+You can pass through any config from the [`lorem-ipsum` NPM package](https://www.npmjs.com/package/lorem-ipsum#using-the-function).
+
+```ts
+import { Component } from '@angular/core';
+import { LipsumService } from 'ngx-lipsum';
+
+@Component({
+  selector: 'my-component',
+  template: '<span>{{ lipsumText }}</span>',
+})
+export class MyComponent {
+  public lipsumText: string;
+  constructor(lipsum: LipsumService) {
+    this.lipsumText = lipsum.get(/* { count: 3, unit: 'sentences' } */);
+  }
+}
+```

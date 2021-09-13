@@ -1,6 +1,6 @@
 {
   "name": "ngx-lipsum-demo",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
@@ -8,7 +8,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "copy": "copyfiles -f README.md CHANGELOG.md LICENSE dist/ngx-lipsum",
+    "package": "npm run build ngx-lipsum && npm run copy",
+    "release": "npx standard-version && sh tools/version-sync.sh && npm run package"
   },
   "private": true,
   "dependencies": {
@@ -21,7 +24,7 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "lorem-ipsum": "^2.0.3",
-    "ngx-lipsum": "^0.0.1",
+    "ngx-lipsum": "^0.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -37,6 +40,7 @@
     "@types/node": "^12.11.1",
     "commitizen": "^4.2.4",
     "commitlint": "^13.1.0",
+    "copyfiles": "^2.4.1",
     "husky": "^7.0.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
