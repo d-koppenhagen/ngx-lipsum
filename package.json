@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "copy": "copyfiles -f README.md CHANGELOG.md LICENSE dist/ngx-lipsum",
     "package": "npm run build ngx-lipsum && npm run copy",
-    "release": "npx standard-version && sh tools/version-sync.sh && npm run package"
+    "release": "npx standard-version && sh tools/version-sync.sh && npm run package && cd dist/ngx-lipsum && npm publish"
   },
   "private": true,
   "dependencies": {
