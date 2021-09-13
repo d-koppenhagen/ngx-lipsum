@@ -1,6 +1,6 @@
 {
   "name": "ngx-lipsum-demo",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "ng": "ng",
     "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
