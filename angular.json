@@ -118,7 +118,7 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/ngx-lipsum/tsconfig.spec.json"
+            "tsConfig": "tsconfig.spec.json"
           }
         }
       }
