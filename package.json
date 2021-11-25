@@ -46,7 +46,7 @@
     "@angular/router": "~13.0.2",
     "@briebug/jest-schematic": "^3.1.0",
     "lorem-ipsum": "^2.0.4",
-    "ngx-lipsum": "^0.0.7",
+    "ngx-lipsum": "^0.0.8",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

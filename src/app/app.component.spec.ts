@@ -5,6 +5,7 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [AppComponent],
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
   });
 
