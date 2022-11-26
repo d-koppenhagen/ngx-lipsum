@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/d-koppenhagen/ngx-lipsum/compare/v0.0.8...v1.0.0) (2022-11-26)
+
 ### [0.0.9](https://github.com/d-koppenhagen/ngx-lipsum/compare/v0.0.8...v0.0.9) (2021-11-25)
 
 ### 0.0.8 (2021-11-25)
