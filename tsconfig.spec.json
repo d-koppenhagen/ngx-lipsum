@@ -7,6 +7,6 @@
     "emitDecoratorMetadata": true,
     "allowJs": true
   },
-  "files": ["src/polyfills.ts"],
+  "files": [],
   "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
 }
