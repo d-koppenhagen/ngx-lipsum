@@ -44,7 +44,7 @@
     "@angular/platform-browser": "^14.2.12",
     "@angular/platform-browser-dynamic": "^14.2.12",
     "@angular/router": "^14.2.12",
-    "@briebug/jest-schematic": "^3.1.0",
+    "@briebug/jest-schematic": "^5.0.0",
     "lorem-ipsum": "^2.0.4",
     "ngx-lipsum": "^0.0.9",
     "rxjs": "~6.6.0",
