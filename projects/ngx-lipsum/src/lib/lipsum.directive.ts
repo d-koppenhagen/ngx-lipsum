@@ -70,6 +70,7 @@ const CONFIG_MAP = new Map<string, ILoremIpsumParams>([
 
 @Directive({
   selector: '[lipsum]',
+  standalone: true,
 })
 export class LipsumDirective implements OnInit {
   @Input('lipsum') config?: ILoremIpsumParams = {};

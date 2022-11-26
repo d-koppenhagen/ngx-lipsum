@@ -5,4 +5,3 @@
 export * from './lib/lipsum.service';
 export * from './lib/lipsum.directive';
 export * from './lib/ngx-lipsum.component';
-export * from './lib/ngx-lipsum.module';

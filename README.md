@@ -21,24 +21,13 @@ Easily use lorem-ipsum dummy texts in your angular app as directive, component o
 All generated texts are based on the [`lorem-ipsum` NPM package](https://www.npmjs.com/package/lorem-ipsum#using-the-function) and it's configuration defined by the `ILoremIpsumParams` interface.
 In most cases this package uses the defaults by passing no further option / an empty object.
 
-### Get started: Import the module
+### Service and Standalone Component / Directive
 
-Before you can use **ngx-lipsum**, you have to import the `NgxLipsumModule` in your app:
+This package provides:
 
-```ts
-/* ... */
-import { NgxLipsumModule } from 'ngx-lipsum';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, NgxLipsumModule],
-  providers: [],
-  bootstrap: [AppComponent],
-})
-export class AppModule {}
-```
-
-Now you can use either the `LipsumService`, `ngx-lipsum`-Component or `lipsum`-Directive.
+- the `LipsumService`
+- the `ngx-lipsum`-Component that can be used as a standalone Component
+- the `lipsum`-Directive which is also exported as standalone Directive
 
 ### Directive Usage
 
