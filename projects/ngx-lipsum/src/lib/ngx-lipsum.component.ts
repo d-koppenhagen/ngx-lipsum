@@ -5,6 +5,7 @@ import { LipsumService } from './lipsum.service';
 @Component({
   selector: 'ngx-lipsum',
   template: `<ng-container>{{ text }}</ng-container>`,
+  standalone: true,
   styles: [],
 })
 export class NgxLipsumComponent implements OnInit {
