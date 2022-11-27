@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgxLipsumModule } from 'ngx-lipsum';
 
 import { AppComponent } from './app.component';
+import { NgxLipsumComponent, LipsumDirective } from 'ngx-lipsum';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, NgxLipsumModule],
+  imports: [BrowserModule, NgxLipsumComponent, LipsumDirective],
   providers: [],
   bootstrap: [AppComponent],
 })
