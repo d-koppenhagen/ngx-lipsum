@@ -1,24 +1,24 @@
-import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
-import { ILoremIpsumParams } from 'lorem-ipsum';
-import { LipsumService } from './lipsum.service';
+import { Component, Input, SimpleChanges } from '@angular/core';
+import { ILoremIpsumParams, loremIpsum } from 'lorem-ipsum';
 
 @Component({
   selector: 'ngx-lipsum',
   template: `<ng-container>{{ text }}</ng-container>`,
   standalone: true,
-  styles: [],
 })
-export class NgxLipsumComponent implements OnInit {
+export class NgxLipsumComponent {
   @Input() config?: ILoremIpsumParams;
 
   public text!: string;
-  constructor(private lipsum: LipsumService) {}
-
-  ngOnInit(): void {
-    this.text = this.lipsum.get(this.config);
+  constructor() {
+    this.setText();
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.text = this.lipsum.get(changes.config.currentValue);
+    this.setText();
+  }
+
+  private setText() {
+    this.text = loremIpsum(this.config);
   }
 }

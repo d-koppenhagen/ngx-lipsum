@@ -11,7 +11,7 @@ describe('NgxLipsumComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [NgxLipsumComponent],
+      imports: [NgxLipsumComponent],
     }).compileComponents();
     mockLipsumService = TestBed.inject(LipsumService);
     mockLipsumServiceSpy = jest

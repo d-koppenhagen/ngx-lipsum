@@ -12,6 +12,7 @@ import { LipsumDirective } from './lipsum.directive';
     <ul [lipsum]></ul>
     <a [lipsum]></a>
   `,
+  standalone: true,
 })
 class TestComponent {}
 
@@ -21,7 +22,7 @@ describe('LipsumDirective', () => {
 
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
-      declarations: [LipsumDirective, TestComponent],
+      imports: [LipsumDirective, TestComponent],
     }).createComponent(TestComponent);
     fixture.detectChanges(); // initial binding
 
