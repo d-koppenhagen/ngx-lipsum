@@ -28,8 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
-            "scripts": [],
-            "allowedCommonJsDependencies": ["lorem-ipsum"]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -98,8 +97,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/ngx-lipsum/ng-package.json",
-            "allowedCommonJsDependencies": ["lorem-ipsum"]
+            "project": "projects/ngx-lipsum/ng-package.json"
           },
           "configurations": {
             "production": {
