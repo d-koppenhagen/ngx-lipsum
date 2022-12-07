@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/d-koppenhagen/ngx-lipsum/compare/v0.0.8...v2.1.0) (2022-12-07)
+
+### Features
+
+- provide standalone features ([36bef1b](https://github.com/d-koppenhagen/ngx-lipsum/commit/36bef1b260b3985c191f564b5a00896308a366bf))
+
+### Bug Fixes
+
+- injection context ([8a6e9a6](https://github.com/d-koppenhagen/ngx-lipsum/commit/8a6e9a6f1cabdf402c1312124b919bfc8206e5ab)), closes [#2](https://github.com/d-koppenhagen/ngx-lipsum/issues/2)
+
 ## [2.0.0](https://github.com/d-koppenhagen/ngx-lipsum/compare/v1.0.0...v2.0.0) (2022-11-27)
 
 ### BREAKING CHANGES:
