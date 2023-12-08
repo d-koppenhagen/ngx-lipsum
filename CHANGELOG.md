@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/d-koppenhagen/ngx-lipsum/compare/v2.1.1...v2.2.0) (2023-12-08)
+
+### Features
+
+- support angular 17 ([9aa4ac2](https://github.com/d-koppenhagen/ngx-lipsum/commit/9aa4ac2b7c48d58d13f0f2e16c533a73d123897c))
+
 ### [2.1.1](https://github.com/d-koppenhagen/ngx-lipsum/compare/v2.1.0...v2.1.1) (2022-12-07)
 
 ## [2.1.0](https://github.com/d-koppenhagen/ngx-lipsum/compare/v0.0.8...v2.1.0) (2022-12-07)
