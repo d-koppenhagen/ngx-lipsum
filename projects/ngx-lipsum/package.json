@@ -1,6 +1,6 @@
 {
   "name": "ngx-lipsum",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "license": "SEE LICENSE IN LICENSE",
   "description": "Easily use lorem-ipsum dummy texts in your angular app as directive, component or by using a service.",
   "publisher": "d-koppenhagen",

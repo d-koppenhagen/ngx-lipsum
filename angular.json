@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-lipsum-demo:build:production"
+              "buildTarget": "ngx-lipsum-demo:build:production"
             },
             "development": {
-              "browserTarget": "ngx-lipsum-demo:build:development"
+              "buildTarget": "ngx-lipsum-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-lipsum-demo:build"
+            "buildTarget": "ngx-lipsum-demo:build"
           }
         },
         "test": {
