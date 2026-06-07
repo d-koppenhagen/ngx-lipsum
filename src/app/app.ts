@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LipsumDirective, LipsumService } from 'ngx-lipsum';
+import { LipsumDirective, LipsumService, NgxLipsumComponent } from 'ngx-lipsum';
 
 @Component({
   selector: 'app-root',
