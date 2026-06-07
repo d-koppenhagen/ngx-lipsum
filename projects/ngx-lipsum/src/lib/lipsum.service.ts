@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { loremIpsum, ILoremIpsumParams } from 'lorem-ipsum';
+import { loremIpsum, LoremIpsumParams } from 'lorem-ipsum';
 
 @Injectable({ providedIn: 'root' })
 export class LipsumService {
   constructor() {}
-  get(params?: ILoremIpsumParams) {
+  get(params?: LoremIpsumParams) {
     return loremIpsum(params);
   }
 }

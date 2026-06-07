@@ -1,20 +1,20 @@
 import { Directive, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
 import { LipsumService } from './lipsum.service';
-import { ILoremIpsumParams, loremIpsum } from 'lorem-ipsum';
+import { LoremIpsumParams, loremIpsum } from 'lorem-ipsum';
 
-const SHORT_EL_DEFAULTS: ILoremIpsumParams = {
+const SHORT_EL_DEFAULTS: LoremIpsumParams = {
   units: 'words',
   count: 4,
 };
-const SENTENCE_DEFAULTS: ILoremIpsumParams = {
+const SENTENCE_DEFAULTS: LoremIpsumParams = {
   units: 'sentences',
   count: 1,
 };
-const PARAGRAPHS_DEFAULTS: ILoremIpsumParams = {
+const PARAGRAPHS_DEFAULTS: LoremIpsumParams = {
   units: 'paragraphs',
   count: 5,
 };
-const CONFIG_MAP = new Map<string, ILoremIpsumParams>([
+const CONFIG_MAP = new Map<string, LoremIpsumParams>([
   ['a', SHORT_EL_DEFAULTS],
   ['article', PARAGRAPHS_DEFAULTS],
   ['aside', PARAGRAPHS_DEFAULTS],
@@ -73,11 +73,11 @@ const CONFIG_MAP = new Map<string, ILoremIpsumParams>([
   standalone: true,
 })
 export class LipsumDirective implements OnInit {
-  @Input('lipsum') config?: ILoremIpsumParams = {};
+  @Input('lipsum') config?: LoremIpsumParams = {};
 
   constructor(readonly el: ElementRef<any>, private renderer: Renderer2) {}
 
-  get params(): ILoremIpsumParams {
+  get params(): LoremIpsumParams {
     return {
       ...(CONFIG_MAP.get(this.el.nativeElement.localName) || {}),
       ...this.config,

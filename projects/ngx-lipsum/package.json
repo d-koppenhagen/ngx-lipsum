@@ -4,11 +4,11 @@
   "license": "SEE LICENSE IN LICENSE",
   "description": "Easily use lorem-ipsum dummy texts in your angular app as directive, component or by using a service.",
   "publisher": "d-koppenhagen",
-  "author": "Danny Koppenhagen <mail@d-koppenhagen.de> (https://k9n.dev)",
+  "author": "Danny Koppenhagen <mail@k9n.dev> (https://k9n.dev)",
   "homepage": "https://github.com/d-koppenhagen/ngx-lipsum",
   "bugs": {
     "url": "https://github.com/d-koppenhagen/ngx-lipsum/issues",
-    "email": "mail@d-koppenhagen.de"
+    "email": "mail@k9n.dev"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,12 @@
     "component"
   ],
   "peerDependencies": {
-    "@angular/common": ">=14.0.0 <18.0.0",
-    "@angular/core": ">=14.0.0 <18.0.0",
-    "lorem-ipsum": "^2.0.8"
+    "@angular/common": ">=17.0.0 <23.0.0",
+    "@angular/core": ">=17.0.0 <23.0.0",
+    "lorem-ipsum": "^3.0.0"
   },
   "dependencies": {
-    "tslib": "^2.6.2"
-  }
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
 }

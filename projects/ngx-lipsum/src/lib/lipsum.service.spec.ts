@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { ILoremIpsumParams } from 'lorem-ipsum';
+import { LoremIpsumParams } from 'lorem-ipsum';
 
 import { LipsumService } from './lipsum.service';
 import { getTestParams } from './test-utils';

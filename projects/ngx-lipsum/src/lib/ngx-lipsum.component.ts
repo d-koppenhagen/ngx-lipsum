@@ -1,5 +1,5 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
-import { ILoremIpsumParams, loremIpsum } from 'lorem-ipsum';
+import { LoremIpsumParams, loremIpsum } from 'lorem-ipsum';
 
 @Component({
   selector: 'ngx-lipsum',
@@ -7,7 +7,7 @@ import { ILoremIpsumParams, loremIpsum } from 'lorem-ipsum';
   standalone: true,
 })
 export class NgxLipsumComponent {
-  @Input() config?: ILoremIpsumParams;
+  @Input() config?: LoremIpsumParams;
 
   public text!: string;
   constructor() {

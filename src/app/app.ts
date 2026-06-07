@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { LipsumService, LipsumDirective, NgxLipsumComponent } from 'ngx-lipsum';
+import { LipsumDirective, LipsumService } from 'ngx-lipsum';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
   imports: [NgxLipsumComponent, LipsumDirective],
-  standalone: true,
+  templateUrl: './app.html',
+  styleUrl: './app.css'
 })
-export class AppComponent {
+export class App {
   public lipsumText: string = '';
   constructor(lipsum: LipsumService) {
     this.lipsumText = lipsum.get();

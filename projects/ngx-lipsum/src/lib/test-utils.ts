@@ -1,6 +1,6 @@
-import { ILoremIpsumParams } from 'lorem-ipsum';
+import { LoremIpsumParams } from 'lorem-ipsum';
 
-export const predictableLoremIpsumParams: ILoremIpsumParams = {
+export const predictableLoremIpsumParams: LoremIpsumParams = {
   count: 3, // Number of "words", "sentences", or "paragraphs"
   paragraphLowerBound: 2, // Min. number of sentences per paragraph.
   paragraphUpperBound: 2, // Max. number of sentences per paragarph.
@@ -11,8 +11,8 @@ export const predictableLoremIpsumParams: ILoremIpsumParams = {
 };
 
 export const getTestParams = (
-  config: ILoremIpsumParams = {},
-): { params: ILoremIpsumParams; result: string } => {
+  config: LoremIpsumParams = {},
+): { params: LoremIpsumParams; result: string } => {
   return {
     params: {
       ...predictableLoremIpsumParams,

@@ -18,7 +18,7 @@ Easily use lorem-ipsum dummy texts in your angular app as directive, component o
 
 ## Usage & Defaults
 
-All generated texts are based on the [`lorem-ipsum` NPM package](https://www.npmjs.com/package/lorem-ipsum#using-the-function) and it's configuration defined by the `ILoremIpsumParams` interface.
+All generated texts are based on the [`lorem-ipsum` NPM package](https://www.npmjs.com/package/lorem-ipsum#using-the-function) and it's configuration defined by the `LoremIpsumParams` interface.
 In most cases this package uses the defaults by passing no further option / an empty object.
 
 ### Service and Standalone Component / Directive
