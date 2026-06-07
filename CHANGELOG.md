@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/d-koppenhagen/ngx-lipsum/compare/v2.2.0...v3.0.0) (2026-06-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* The project now requires Angular 22 and updated tooling. Consumers may need to update dependencies, build configuration, and development environment to remain compatible.
+
+* upgrade to Angular 22 and modernize project setup ([cfa9cf6](https://github.com/d-koppenhagen/ngx-lipsum/commit/cfa9cf617036364f37590ba10b338e2eef787af3))
+
 ## [2.2.0](https://github.com/d-koppenhagen/ngx-lipsum/compare/v2.1.1...v2.2.0) (2023-12-08)
 
 ### Features
